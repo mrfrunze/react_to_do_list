@@ -1,0 +1,165 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+ul{
+   list-style: none;
+}
+
+html{
+   font-size: 22px;
+}
+
+body{
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   flex: auto;
+}
+
+#root, .App {
+   display: flex;
+   align-items: center;
+}
+
+.App{
+   width: 100%;
+    max-width: 800px;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 1px solid #333;
+    box-shadow: 0 0 15px grey;
+}
+
+main{
+   flex-grow: 1;
+   width: 100%;
+   margin-top: 50px;
+}
+
+.text-al-c{
+   text-align: center;
+}
+
+.footer,
+.header{
+   background-color: mediumblue;
+   color: #fff;
+   padding: 10px 0;
+   width: 100%;
+}
+
+ul{
+   width: 100%;
+   padding: 0 10px;
+}
+
+ul li::before {
+   content: "\200B";
+
+}
+
+.item{
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   padding: 0 10px;
+   margin: 0.25rem 0;
+   background-color: #eee;
+}
+
+.item:first-child{
+   margin: 0;
+}
+
+.item svg{
+   width: 48px;
+   height: 36px;
+   font-size: 1rem;
+   color:steelblue;
+   cursor: pointer;
+}
+
+.item svg:focus,
+.item svg:hover{
+   color: red;
+   outline: none;
+}
+
+.item > label{
+   font-size: 0.75rem;
+   flex-grow: 1;
+}
+
+.item input[type="checkbox"]{
+   text-align: center;
+   width: 2.5rem;
+   width: 48px;
+   height: 48px;
+   cursor: pointer;
+   margin-right: 0.5rem;
+}
+
+.item input[type="checkbox"]:focus + label{
+   text-decoration: none;
+}
+
+.addForm,
+.searchForm{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   margin: 10px 0 0;
+   padding: 10px 5px;
+   border-bottom: 1px solid #eee;
+}
+
+.addForm label,
+.searchForm label{
+   position: absolute;
+   left: -9999px;
+}
+
+.inputText{
+   flex-grow: 1;
+   max-width: calc(100% - 50px);
+   min-height: 48px;
+   font-size: 16px;
+   padding: 5px;
+   margin-right: 5px;
+   outline: none;
+   border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+   -o-border-radius: 5px;
+}
+
+.searchForm > .inputText{
+   max-width: 100%;
+}
+
+.addForm button{
+   height: 48px;
+   min-width: 48px;
+   font-size: 16px;
+   padding: 5px;
+   background-color: aliceblue;
+   color: mediumblue;
+   cursor: pointer;
+   border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+   -o-border-radius: 5px;
+}
+
+.addForm button:focus,
+.addForm button:hover{
+   color: #fff;
+   background-color: limegreen;
+   outline: none;
+}
