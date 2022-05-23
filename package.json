@@ -1,7 +1,7 @@
 {
   "name": "react-start",
   "version": "0.1.0",
-  "homepage": "https://mrfrunze.github.io/react_to_do_list",
+  "homepage": "https://mrfrunze.github.io/react_deploy_gh",
   "private": true,
   "dependencies": {
     "create-react-app": "^5.0.0",
