@@ -1,6 +1,7 @@
 {
   "name": "react-start",
   "version": "0.1.0",
+  "homepage": "https://mrfrunze.github.io/react_to_do_list",
   "private": true,
   "dependencies": {
     "create-react-app": "^5.0.0",
@@ -15,6 +16,8 @@
     "react-transition-group": "^4.3.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy" :"gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
@@ -36,6 +39,7 @@
     ]
   },
   "devDependencies": {
-    "concurrently": "^5.0.0"
+    "concurrently": "^5.0.0",
+    "gh-pages": "^4.0.0"
   }
 }
